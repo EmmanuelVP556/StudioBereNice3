@@ -108,7 +108,7 @@ html {
    ============================================ */
 
 .hero-bg {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/Fondo/img3.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://i.postimg.cc/sgxR7Lsx/fondo.jpg');
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
