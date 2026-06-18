@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Studio Berenice | Manicure & Beauty</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Nunito:wght@300;400;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Iconos (FontAwesome) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Configuración de Colores Personalizados -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              bg: '#fff5f8',
+              text: '#a54b4b',
+              primary: '#ff69b4',
+              hover: '#e1579f',
+              dark: '#444444',
+              white: '#ffffff'
+            }
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'serif'],
+            sans: ['"Nunito"', 'sans-serif'],
+          },
+          boxShadow: {
+            'card': '0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- CSS Personalizado -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="font-sans antialiased flex flex-col min-h-screen">
+
+  <!-- ========================================== -->
+  <!-- PLACEHOLDER PARA EL HEADER -->
+  <!-- ========================================== -->
+  <div id="header-placeholder"></div>
+
+  <!-- ========================================== -->
+  <!-- CONTENIDO PRINCIPAL -->
+  <!-- ========================================== -->
+  <main class="flex-grow">
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="hero-bg h-screen flex items-center justify-center text-center relative px-4">
+      <div class="relative z-10 max-w-3xl mx-auto reveal active">
+        <div class="inline-block px-4 py-1 border border-white/30 rounded-full bg-white/10 backdrop-blur-md mb-4">
+          <span class="text-white text-sm uppercase tracking-widest">Belleza & Estilo</span>
+        </div>
+        <h1 class="font-serif text-5xl md:text-7xl text-white font-bold mb-6 drop-shadow-lg">
+          Tu estilo, <span class="text-brand-primary italic">nuestra pasión</span>
+        </h1>
+        <p class="text-lg md:text-xl text-gray-100 mb-8 max-w-2xl mx-auto font-light">
+          Manicura de ensueño, cejas perfectas y trenzas personalizadas.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+          <a href="#servicios"
+            class="px-8 py-3 bg-transparent border-2 border-white text-white rounded-full font-bold text-lg hover:bg-white hover:text-brand-text transition-all">
+            Ver Servicios
+          </a>
+          <a href="https://api.whatsapp.com/send/?phone=2941182897&text&type=phone_number&app_absent=0"
+            class="px-8 py-3 bg-brand-primary text-white rounded-full font-bold text-lg shadow-lg hover:bg-brand-hover hover:scale-105 transition-all">
+            Agendar Cita
+          </a>
+          <a href="#galeria"
+            class="px-8 py-3 bg-transparent border-2 border-white text-white rounded-full font-bold text-lg hover:bg-white hover:text-brand-text transition-all">
+            Ver Galería
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICIOS - TARJETAS MÁS PEQUEÑAS -->
+    <section id="servicios" class="py-16 container mx-auto px-6">
+      <div class="text-center mb-12 reveal">
+        <h2 class="font-serif text-4xl font-bold text-brand-text mb-4">Nuestros Servicios</h2>
+        <div class="w-24 h-1 bg-brand-primary mx-auto rounded-full"></div>
+      </div>
+
+      <div class="flex flex-col gap-6 max-w-5xl mx-auto">
+
+        <!-- Card 1: Manicure -->
+        <div
+          class="flex flex-col md:flex-row bg-white border-2 border-brand-primary rounded-2xl shadow-card overflow-hidden hover:shadow-xl transition-shadow reveal">
+          <div class="w-full md:w-1/3 h-52 md:h-auto relative overflow-hidden">
+            <img src="img/Gel polish/manos47.jpg" alt="Manicure profesional en Studio Berenice"
+              class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+          </div>
+          <div class="w-full md:w-2/3 p-6 md:p-8 flex flex-col justify-center text-left">
+            <h3 class="font-serif text-2xl md:text-3xl font-bold text-brand-text mb-2">Manicure</h3>
+            <p class="text-gray-600 text-sm md:text-base mb-4 leading-relaxed">Cuidado y embellecimiento de tus manos
+              con técnicas modernas, esmaltado en gel y diseños personalizados.</p>
+            <div>
+              <a href="manicure.html"
+                class="inline-block px-6 py-2.5 bg-brand-primary text-white rounded-full font-bold text-sm hover:bg-brand-hover transition-colors shadow-md">
+                Ver más
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Pedicure -->
+        <div
+          class="flex flex-col md:flex-row bg-white border-2 border-brand-primary rounded-2xl shadow-card overflow-hidden hover:shadow-xl transition-shadow reveal">
+          <div class="w-full md:w-1/3 h-52 md:h-auto relative overflow-hidden">
+            <img src="img/Esmaltado en gel/trbajopies1.jpg" alt="Pedicure profesional en Studio Berenice"
+              class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+          </div>
+          <div class="w-full md:w-2/3 p-6 md:p-8 flex flex-col justify-center text-left">
+            <h3 class="font-serif text-2xl md:text-3xl font-bold text-brand-text mb-2">Pedicure</h3>
+            <p class="text-gray-600 text-sm md:text-base mb-4 leading-relaxed">Relajación profunda y belleza para tus
+              pies. Incluye limpieza, exfoliación y esmaltado perfecto.</p>
+            <div>
+              <a href="pedicure.html"
+                class="inline-block px-6 py-2.5 bg-brand-primary text-white rounded-full font-bold text-sm hover:bg-brand-hover transition-colors shadow-md">
+                Ver más
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3: Trenzas -->
+        <div
+          class="flex flex-col md:flex-row bg-white border-2 border-brand-primary rounded-2xl shadow-card overflow-hidden hover:shadow-xl transition-shadow reveal">
+          <div class="w-full md:w-1/3 h-52 md:h-auto relative overflow-hidden">
+            <img src="https://i.ibb.co/Pvxy7SkS/trensa1.webp" alt="Trenzas profesionales en Studio Berenice"
+              class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+          </div>
+          <div class="w-full md:w-2/3 p-6 md:p-8 flex flex-col justify-center text-left">
+            <h3 class="font-serif text-2xl md:text-3xl font-bold text-brand-text mb-2">Trenzas</h3>
+            <p class="text-gray-600 text-sm md:text-base mb-4 leading-relaxed">Estilos versátiles y duraderos. Desde
+              trenzas africanas hasta diseños modernos y elegantes.</p>
+            <div>
+              <a href="trenzas.html"
+                class="inline-block px-6 py-2.5 bg-brand-primary text-white rounded-full font-bold text-sm hover:bg-brand-hover transition-colors shadow-md">
+                Ver más
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4: Cejas -->
+        <div
+          class="flex flex-col md:flex-row bg-white border-2 border-brand-primary rounded-2xl shadow-card overflow-hidden hover:shadow-xl transition-shadow reveal">
+          <div class="w-full md:w-1/3 h-52 md:h-auto relative overflow-hidden">
+            <img src="https://i.postimg.cc/0jt9q1P0/cejas2.jpg" alt="Diseño de cejas profesional en Studio Berenice"
+              class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+          </div>
+          <div class="w-full md:w-2/3 p-6 md:p-8 flex flex-col justify-center text-left">
+            <h3 class="font-serif text-2xl md:text-3xl font-bold text-brand-text mb-2">Cejas</h3>
+            <p class="text-gray-600 text-sm md:text-base mb-4 leading-relaxed">Diseño y perfilado profesional para
+              enmarcar tu mirada. Laminado, henna y depilación.</p>
+            <div>
+              <a href="cejas.html"
+                class="inline-block px-6 py-2.5 bg-brand-primary text-white rounded-full font-bold text-sm hover:bg-brand-hover transition-colors shadow-md">
+                Ver más
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5: Extensiones -->
+        <div
+          class="flex flex-col md:flex-row bg-white border-2 border-brand-primary rounded-2xl shadow-card overflow-hidden hover:shadow-xl transition-shadow reveal">
+          <div class="w-full md:w-1/3 h-52 md:h-auto relative overflow-hidden">
+            <img src="https://i.postimg.cc/Zq3YvQxC/extension-1.jpg" alt="Extensiones de cabello en Studio Berenice"
+              class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+          </div>
+          <div class="w-full md:w-2/3 p-6 md:p-8 flex flex-col justify-center text-left">
+            <h3 class="font-serif text-2xl md:text-3xl font-bold text-brand-text mb-2">Extensiones</h3>
+            <p class="text-gray-600 text-sm md:text-base mb-4 leading-relaxed">Esta técnica es ideal para quienes buscan
+              un cambio de look atrevido sin dañar su cabello natural.</p>
+            <div>
+              <a href="extensiones.html"
+                class="inline-block px-6 py-2.5 bg-brand-primary text-white rounded-full font-bold text-sm hover:bg-brand-hover transition-colors shadow-md">
+                Ver más
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECCIÓN AGENDAR CITA - MÁS PEQUEÑA -->
+    <section id="contacto" class="py-12 md:py-16 bg-pink-50 overflow-hidden">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12 reveal">
+
+          <!-- Texto más compacto -->
+          <div class="md:w-1/2 text-center md:text-left mb-6 md:mb-0">
+            <h2 class="font-serif text-3xl md:text-4xl font-bold text-brand-text mb-3 leading-tight">
+              ¡Agenda tu cita<br>hoy mismo!
+            </h2>
+            <p class="text-lg text-gray-600 mb-4">
+              Reserva tu espacio y déjate consentir por nuestras expertas.
+            </p>
+            <div class="hidden md:block">
+              <i class="fas fa-arrow-right text-brand-primary text-3xl animate-bounce"></i>
+            </div>
+          </div>
+
+          <!-- Teléfono más pequeño -->
+          <div class="md:w-1/2 flex justify-center relative">
+            <div
+              class="bg-white border-[10px] border-gray-800 rounded-[2.5rem] p-3 shadow-2xl relative z-10 max-w-xs w-full mx-auto aspect-[9/16] flex items-center justify-center overflow-hidden bg-brand-bg">
+              <div
+                class="flex flex-col items-center justify-center h-full w-full bg-white rounded-[1.5rem] p-5 text-center relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-pink-100 to-white opacity-50 z-0">
+                </div>
+                <div class="relative z-10 flex flex-col items-center">
+                  <img src="https://i.postimg.cc/52yMLrbb/logo.png" alt="Studio Berenice"
+                    class="w-24 mb-4 drop-shadow-sm">
+                  <h3 class="font-serif text-xl font-bold text-brand-text mb-1">Studio Berenice</h3>
+                  <p class="text-gray-500 text-sm mb-5">Reserva tu cita vía WhatsApp</p>
+                  <a href="https://wa.me/+522941182897" target="_blank"
+                    class="w-full px-6 py-3 bg-brand-primary text-white rounded-xl font-bold text-base shadow-lg hover:bg-brand-hover transition-all transform hover:scale-105 flex items-center justify-center">
+                    Reservar <i class="fab fa-whatsapp ml-2 text-xl"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="absolute -bottom-8 -right-8 w-48 h-48 bg-brand-primary/20 rounded-full blur-3xl -z-10"></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERÍA DE INSPIRACIÓN -->
+    <section id="galeria" class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-10 reveal">
+          <h2 class="font-serif text-4xl font-bold text-brand-text mb-4">Galería de Inspiración</h2>
+
+          <!-- Filtros -->
+          <div class="flex flex-wrap justify-center gap-3 mt-8 galeria-filtros">
+            <button data-filter="all"
+              class="px-6 py-1.5 rounded-full border border-brand-primary text-white bg-brand-primary text-sm font-semibold shadow-sm transition-all hover:shadow-md active">Todos</button>
+            <button data-filter="uñas"
+              class="px-6 py-1.5 rounded-full border border-brand-primary text-brand-primary bg-white text-sm font-semibold hover:bg-brand-primary hover:text-white transition-all">Uñas</button>
+            <button data-filter="pies"
+              class="px-6 py-1.5 rounded-full border border-brand-primary text-brand-primary bg-white text-sm font-semibold hover:bg-brand-primary hover:text-white transition-all">Pies</button>
+            <button data-filter="trenzas"
+              class="px-6 py-1.5 rounded-full border border-brand-primary text-brand-primary bg-white text-sm font-semibold hover:bg-brand-primary hover:text-white transition-all">Trenzas</button>
+            <button data-filter="cejas"
+              class="px-6 py-1.5 rounded-full border border-brand-primary text-brand-primary bg-white text-sm font-semibold hover:bg-brand-primary hover:text-white transition-all">Cejas</button>
+            <button data-filter="Extensiones"
+              class="px-6 py-1.5 rounded-full border border-brand-primary text-brand-primary bg-white text-sm font-semibold hover:bg-brand-primary hover:text-white transition-all">Extensiones</button>
+          </div>
+        </div>
+
+        <!-- Grid Galería -->
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 px-2 md:px-0">
+          <!-- Item 1 -->
+          <div class="galeria-item relative group overflow-hidden rounded-xl cursor-pointer aspect-[3/4] shadow-md"
+            data-category="uñas">
+            <img src="https://i.postimg.cc/0r19cyNc/manos1.jpg"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              alt="Diseño Uñas">
+            <div
+              class="absolute inset-0 bg-brand-primary/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <i class="fas fa-expand-alt text-white text-2xl drop-shadow-md"></i>
+            </div>
+          </div>
+          <!-- Item 2 -->
+          <div class="galeria-item relative group overflow-hidden rounded-xl cursor-pointer aspect-[3/4] shadow-md"
+            data-category="uñas">
+            <img src="https://i.postimg.cc/7brqmZLX/manos2.jpg"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              alt="Diseño Uñas">
+            <div
+              class="absolute inset-0 bg-brand-primary/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <i class="fas fa-expand-alt text-white text-2xl drop-shadow-md"></i>
+            </div>
+          </div>
+          <!-- Item 3 -->
+          <div class="galeria-item relative group overflow-hidden rounded-xl cursor-pointer aspect-[3/4] shadow-md"
+            data-category="pies">
+            <img src="img/Esmaltado en gel/trbajopies1.jpg"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Pies">
+            <div
+              class="absolute inset-0 bg-brand-primary/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <i class="fas fa-expand-alt text-white text-2xl drop-shadow-md"></i>
+            </div>
+          </div>
+          <!-- Item 4 -->
+          <div class="galeria-item relative group overflow-hidden rounded-xl cursor-pointer aspect-[3/4] shadow-md"
+            data-category="trenzas">
+            <img src="img/trensas/trensa2.jpg"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Trenzas">
+            <div
+              class="absolute inset-0 bg-brand-primary/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <i class="fas fa-expand-alt text-white text-2xl drop-shadow-md"></i>
+            </div>
+          </div>
+          <!-- Item 5 -->
+          <div class="galeria-item relative group overflow-hidden rounded-xl cursor-pointer aspect-[3/4] shadow-md"
+            data-category="uñas">
+            <img src="https://i.postimg.cc/F1XhDHKZ/manos3.jpg"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Uñas">
+            <div
+              class="absolute inset-0 bg-brand-primary/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <i class="fas fa-expand-alt text-white text-2xl drop-shadow-md"></i>
+            </div>
+          </div>
+          <!-- Item 6 -->
+          <div class="galeria-item relative group overflow-hidden rounded-xl cursor-pointer aspect-[3/4] shadow-md"
+            data-category="uñas">
+            <img src="https://i.postimg.cc/nMfn0hL1/manos4.jpg"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Cejas">
+            <div
+              class="absolute inset-0 bg-brand-primary/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <i class="fas fa-expand-alt text-white text-2xl drop-shadow-md"></i>
+            </div>
+          </div>
+
+          <!-- Item 7 -->
+          <div class="galeria-item relative group overflow-hidden rounded-xl cursor-pointer aspect-[3/4] shadow-md"
+            data-category="cejas">
+            <img src="https://i.postimg.cc/j28RrYtQ/cejas3.jpg"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Cejas">
+            <div
+              class="absolute inset-0 bg-brand-primary/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <i class="fas fa-expand-alt text-white text-2xl drop-shadow-md"></i>
+            </div>
+          </div>
+
+          <!-- Item 8 -->
+          <div class="galeria-item relative group overflow-hidden rounded-xl cursor-pointer aspect-[3/4] shadow-md"
+            data-category="Extensiones">
+            <img src="https://i.postimg.cc/3wpr0qFW/extension-2.jpg"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              alt="Extensiones">
+            <div
+              class="absolute inset-0 bg-brand-primary/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <i class="fas fa-expand-alt text-white text-2xl drop-shadow-md"></i>
+            </div>
+          </div>
+
+          <!-- Item 9 -->
+          <div class="galeria-item relative group overflow-hidden rounded-xl cursor-pointer aspect-[3/4] shadow-md"
+            data-category="Extensiones">
+            <img src="https://i.postimg.cc/Zq3YvQxC/extension-1.jpg"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              alt="Extensiones">
+            <div
+              class="absolute inset-0 bg-brand-primary/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <i class="fas fa-expand-alt text-white text-2xl drop-shadow-md"></i>
+            </div>
+          </div>
+
+          <!-- Item 10 -->
+          <div class="galeria-item relative group overflow-hidden rounded-xl cursor-pointer aspect-[3/4] shadow-md"
+            data-category="Extensiones">
+            <img src="https://i.postimg.cc/ZnfJhz4P/cejas4.jpg"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              alt="Extensiones">
+            <div
+              class="absolute inset-0 bg-brand-primary/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <i class="fas fa-expand-alt text-white text-2xl drop-shadow-md"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================== -->
+  <!-- PLACEHOLDER PARA EL FOOTER -->
+  <!-- ========================================== -->
+  <div id="footer-placeholder"></div>
+
+  <!-- ========================================== -->
+  <!-- PLACEHOLDER PARA WHATSAPP Y LIGHTBOX -->
+  <!-- ========================================== -->
+  <div id="whatsapp-placeholder"></div>
+  <div id="lightbox-placeholder"></div>
+
+  <!-- ========================================== -->
+  <!-- SCRIPTS -->
+  <!-- ========================================== -->
+
+  <script src="js/components.js"></script>
+  <script src="js/main.js"></script>
+
+  <script>
+    renderComponents('home');
+  </script>
+</body>
+
+</html>

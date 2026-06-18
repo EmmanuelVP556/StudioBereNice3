@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Servicios de Uñas | Studio Berenice</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Nunito:wght@300;400;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Iconos (FontAwesome) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              bg: '#fff5f8',
+              text: '#a54b4b',
+              primary: '#ff69b4',
+              hover: '#e1579f',
+              dark: '#444444',
+              white: '#ffffff',
+              light: '#fdf2f8'
+            }
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'serif'],
+            sans: ['"Nunito"', 'sans-serif'],
+          },
+          boxShadow: {
+            'card': '0 10px 30px -5px rgba(255, 105, 180, 0.15), 0 8px 10px -6px rgba(0, 0, 0, 0.1)',
+            'glow': '0 0 15px rgba(255, 105, 180, 0.3)'
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="font-sans antialiased flex flex-col min-h-screen pt-24 bg-white">
+
+  <div id="header-placeholder"></div>
+
+  <main class="flex-grow">
+
+    <section class="relative py-20 bg-gradient-to-b from-brand-bg to-white text-center overflow-hidden">
+      <div class="absolute inset-0 bg-pattern opacity-30 pointer-events-none"></div>
+
+      <div class="container mx-auto px-6 relative z-10">
+        <div class="max-w-4xl mx-auto reveal active">
+          <span class="text-brand-primary uppercase tracking-widest text-sm font-bold mb-2 block">Experiencia y
+            Calidad</span>
+          <h1 class="font-serif text-5xl md:text-6xl font-bold text-brand-text mb-6">Servicios de Uñas</h1>
+          <div class="w-24 h-1 bg-brand-primary mx-auto rounded-full mb-8"></div>
+          <p class="text-gray-600 text-lg md:text-xl leading-relaxed max-w-2xl mx-auto">
+            En <span class="font-bold text-brand-text">Studio Berenice</span> elevamos tu estilo con manicuras
+            sofisticadas y personalizadas. Nuestro equipo utiliza solo productos premium para garantizar resultados
+            duraderos.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="pb-20 pt-10 container mx-auto px-6 relative z-10 -mt-10">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+
+        <div
+          class="bg-white p-8 md:p-10 rounded-[2rem] shadow-card text-center transform transition duration-500 hover:-translate-y-4 hover:shadow-glow border-t-4 border-brand-primary reveal">
+          <div
+            class="w-16 h-16 mx-auto bg-brand-bg rounded-full flex items-center justify-center text-brand-primary text-2xl mb-6">
+            <i class="fas fa-paint-brush"></i>
+          </div>
+          <h3 class="font-serif text-2xl font-bold text-brand-text mb-4">Baño de Acrílico</h3>
+          <p class="text-gray-600 leading-relaxed mb-6">
+            Corte, limpieza y esmaltado sobre tu uña natural con colores vibrantes y un acabado impecable y duradero.
+          </p>
+          <div class="text-brand-primary font-bold text-sm uppercase tracking-wide">Acabado Natural</div>
+        </div>
+
+        <div
+          class="bg-white p-8 md:p-10 rounded-[2rem] shadow-card text-center transform transition duration-500 hover:-translate-y-4 hover:shadow-glow border-t-4 border-brand-primary reveal"
+          style="transition-delay: 150ms;">
+          <div
+            class="w-16 h-16 mx-auto bg-brand-bg rounded-full flex items-center justify-center text-brand-primary text-2xl mb-6">
+            <i class="fas fa-magic"></i>
+          </div>
+          <h3 class="font-serif text-2xl font-bold text-brand-text mb-4">Acrílico Tip</h3>
+          <p class="text-gray-600 leading-relaxed mb-6">
+            Extensión y resistencia. Brillo intenso hasta por 3 semanas sin desconchados para unas manos de impacto.
+          </p>
+          <div class="text-brand-primary font-bold text-sm uppercase tracking-wide">Mayor Longitud</div>
+        </div>
+
+        <div
+          class="bg-white p-8 md:p-10 rounded-[2rem] shadow-card text-center transform transition duration-500 hover:-translate-y-4 hover:shadow-glow border-t-4 border-brand-primary reveal"
+          style="transition-delay: 300ms;">
+          <div
+            class="w-16 h-16 mx-auto bg-brand-bg rounded-full flex items-center justify-center text-brand-primary text-2xl mb-6">
+            <i class="fas fa-gem"></i>
+          </div>
+          <h3 class="font-serif text-2xl font-bold text-brand-text mb-4">Gel Polish</h3>
+          <p class="text-gray-600 leading-relaxed mb-6">
+            Diseños únicos a tu gusto: déjanos plasmar tu creatividad en cada uña con nuestra amplia gama de colores.
+          </p>
+          <div class="text-brand-primary font-bold text-sm uppercase tracking-wide">Arte y Color</div>
+        </div>
+
+      </div>
+
+      <div class="text-center mt-20 reveal bg-brand-bg p-8 rounded-3xl max-w-4xl mx-auto shadow-sm">
+        <i class="fas fa-heart text-brand-primary text-3xl mb-4"></i>
+        <h4 class="text-brand-text font-serif text-2xl md:text-3xl font-bold mb-3">
+          ¡Reserva ahora y presume unas uñas que hablen por ti!
+        </h4>
+        <p class="text-gray-600 text-lg mb-6">
+          Contáctanos vía WhatsApp para agendar tu cita y diseñar tu look perfecto.
+        </p>
+        <a href="https://wa.me/+522941182897" target="_blank"
+          class="inline-flex items-center px-8 py-3 bg-brand-primary text-white rounded-full font-bold shadow-md hover:bg-brand-hover transition-all transform hover:scale-105">
+          <i class="fab fa-whatsapp mr-2"></i> Agendar Cita
+        </a>
+      </div>
+    </section>
+
+    <section id="galeria" class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-12 reveal">
+          <h2 class="font-serif text-4xl font-bold text-brand-text mb-4">Galería de Manicure</h2>
+          <div class="w-16 h-1 bg-brand-primary mx-auto rounded-full mb-8 opacity-50"></div>
+
+          <div class="flex flex-wrap justify-center gap-3 mt-8 galeria-filtros">
+            <button data-filter="all"
+              class="px-6 py-2 rounded-full border border-brand-primary text-white bg-brand-primary text-sm font-semibold shadow-sm transition-all hover:shadow-md active">Todos</button>
+            <button data-filter="bano"
+              class="px-6 py-2 rounded-full border border-brand-primary text-brand-primary bg-white text-sm font-semibold hover:bg-brand-primary hover:text-white transition-all">Baño
+              de Acrílico</button>
+            <button data-filter="tip"
+              class="px-6 py-2 rounded-full border border-brand-primary text-brand-primary bg-white text-sm font-semibold hover:bg-brand-primary hover:text-white transition-all">Acrílico
+              Tip</button>
+            <button data-filter="gel"
+              class="px-6 py-2 rounded-full border border-brand-primary text-brand-primary bg-white text-sm font-semibold hover:bg-brand-primary hover:text-white transition-all">Gel
+              Polish</button>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-2 md:px-0">
+
+          <div
+            class="galeria-item relative group overflow-hidden rounded-2xl cursor-pointer aspect-[3/4] shadow-md hover:shadow-xl transition-all"
+            data-category="gel">
+            <img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?q=80&w=600&auto=format&fit=crop"
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              alt="Gel Polish en uñas">
+            <div
+              class="absolute inset-0 bg-brand-primary/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-[2px]">
+              <i
+                class="fas fa-search-plus text-white text-3xl drop-shadow-lg transform scale-0 group-hover:scale-100 transition-transform duration-300"></i>
+            </div>
+          </div>
+
+          <div
+            class="galeria-item relative group overflow-hidden rounded-2xl cursor-pointer aspect-[3/4] shadow-md hover:shadow-xl transition-all"
+            data-category="tip">
+            <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?q=80&w=600&auto=format&fit=crop"
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              alt="Acrílico Tip en uñas">
+            <div
+              class="absolute inset-0 bg-brand-primary/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-[2px]">
+              <i
+                class="fas fa-search-plus text-white text-3xl drop-shadow-lg transform scale-0 group-hover:scale-100 transition-transform duration-300"></i>
+            </div>
+          </div>
+
+          <div
+            class="galeria-item relative group overflow-hidden rounded-2xl cursor-pointer aspect-[3/4] shadow-md hover:shadow-xl transition-all"
+            data-category="bano">
+            <img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&w=600&auto=format&fit=crop"
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              alt="Baño de acrílico en uñas">
+            <div
+              class="absolute inset-0 bg-brand-primary/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-[2px]">
+              <i
+                class="fas fa-search-plus text-white text-3xl drop-shadow-lg transform scale-0 group-hover:scale-100 transition-transform duration-300"></i>
+            </div>
+          </div>
+
+          <div
+            class="galeria-item relative group overflow-hidden rounded-2xl cursor-pointer aspect-[3/4] shadow-md hover:shadow-xl transition-all"
+            data-category="gel">
+            <img src="https://images.unsplash.com/photo-1519014816548-bf5fe059e98b?q=80&w=600&auto=format&fit=crop"
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              alt="Diseño en gel polish">
+            <div
+              class="absolute inset-0 bg-brand-primary/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-[2px]">
+              <i
+                class="fas fa-search-plus text-white text-3xl drop-shadow-lg transform scale-0 group-hover:scale-100 transition-transform duration-300"></i>
+            </div>
+          </div>
+
+          <div
+            class="galeria-item relative group overflow-hidden rounded-2xl cursor-pointer aspect-[3/4] shadow-md hover:shadow-xl transition-all"
+            data-category="tip">
+            <img src="https://images.unsplash.com/photo-1560707854-fb9a10eb5a54?q=80&w=600&auto=format&fit=crop"
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              alt="Uñas con acrílico tip">
+            <div
+              class="absolute inset-0 bg-brand-primary/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-[2px]">
+              <i
+                class="fas fa-search-plus text-white text-3xl drop-shadow-lg transform scale-0 group-hover:scale-100 transition-transform duration-300"></i>
+            </div>
+          </div>
+
+          <div
+            class="galeria-item relative group overflow-hidden rounded-2xl cursor-pointer aspect-[3/4] shadow-md hover:shadow-xl transition-all"
+            data-category="bano">
+            <img src="https://images.unsplash.com/photo-1596704017254-9b121068fb31?q=80&w=600&auto=format&fit=crop"
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              alt="Baño de acrílico natural">
+            <div
+              class="absolute inset-0 bg-brand-primary/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-[2px]">
+              <i
+                class="fas fa-search-plus text-white text-3xl drop-shadow-lg transform scale-0 group-hover:scale-100 transition-transform duration-300"></i>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="footer-placeholder"></div>
+  <div id="whatsapp-placeholder"></div>
+  <div id="lightbox-placeholder"></div>
+
+  <script src="js/components.js"></script>
+  <script src="js/main.js"></script>
+
+  <script>
+    renderComponents('manicure');
+  </script>
+</body>
+
+</html>

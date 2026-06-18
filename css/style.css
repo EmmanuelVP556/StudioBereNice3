@@ -1,0 +1,246 @@
+/* ============================================
+   ESTILOS GLOBALES
+   ============================================ */
+
+/* Reset y configuración base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff5f8;
+  color: #a54b4b;
+  overflow-x: hidden;
+  font-family: 'Nunito', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ============================================
+   ANIMACIONES
+   ============================================ */
+
+/* Dropdown Menu */
+.dropdown-menu {
+  transform: translateY(10px);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.group:hover .dropdown-menu,
+.dropdown-menu.active {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Scroll Reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ============================================
+   PATRONES DE FONDO
+   ============================================ */
+
+.bg-pattern {
+  background-image: radial-gradient(#ff69b4 0.5px, transparent 0.5px);
+  background-size: 20px 20px;
+  opacity: 0.1;
+}
+
+/* ============================================
+   BOTÓN FLOTANTE WHATSAPP
+   ============================================ */
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #25d366;
+  color: white;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 35px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  animation: pulse-green 2s infinite;
+  text-decoration: none;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  background-color: #20ba5a;
+}
+
+@keyframes pulse-green {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+
+/* ============================================
+   HERO SECTION
+   ============================================ */
+
+.hero-bg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/Fondo/img3.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+/* ============================================
+   LIGHTBOX
+   ============================================ */
+
+#lightbox {
+  background-color: rgba(0, 0, 0, 0.95);
+}
+
+#lightbox .lb-img {
+  max-height: 85vh;
+  max-width: 90vw;
+  transition: all 0.3s ease;
+}
+
+/* ============================================
+   TARJETAS DE CONTACTO (Contacto.html)
+   ============================================ */
+
+/* WhatsApp */
+.card-whatsapp:hover {
+  background-color: #25D366 !important;
+  color: white !important;
+  transform: translateY(-10px);
+}
+.card-whatsapp:hover p,
+.card-whatsapp:hover h3,
+.card-whatsapp:hover i {
+  color: white !important;
+}
+.card-whatsapp:hover .btn-contact {
+  background-color: white;
+  color: #25D366;
+}
+
+/* Facebook */
+.card-facebook:hover {
+  background-color: #1877F2 !important;
+  color: white !important;
+  transform: translateY(-10px);
+}
+.card-facebook:hover p,
+.card-facebook:hover h3,
+.card-facebook:hover i {
+  color: white !important;
+}
+.card-facebook:hover .btn-contact {
+  background-color: white;
+  color: #1877F2;
+}
+
+/* Instagram */
+.card-instagram:hover {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%) !important;
+  color: white !important;
+  transform: translateY(-10px);
+}
+.card-instagram:hover p,
+.card-instagram:hover h3,
+.card-instagram:hover i {
+  color: white !important;
+}
+.card-instagram:hover .btn-contact {
+  background-color: white;
+  color: #cc2366;
+}
+
+/* TikTok */
+.card-tiktok:hover {
+  background-color: #000000 !important;
+  color: white !important;
+  transform: translateY(-10px);
+}
+.card-tiktok:hover p,
+.card-tiktok:hover h3,
+.card-tiktok:hover i {
+  color: white !important;
+}
+.card-tiktok:hover .btn-contact {
+  background-color: white;
+  color: #000000;
+}
+
+.btn-contact {
+  transition: all 0.3s ease;
+}
+
+/* ============================================
+   UTILIDADES ADICIONALES
+   ============================================ */
+
+/* Transiciones suaves para elementos de galería */
+.galeria-item {
+  transition: all 0.3s ease;
+}
+
+.galeria-item img {
+  transition: transform 0.7s ease;
+}
+
+.galeria-item .overlay {
+  transition: opacity 0.3s ease;
+}
+
+.galeria-item .overlay i {
+  transition: transform 0.3s ease;
+}
+
+/* Estilos para el menú móvil */
+#mobile-menu {
+  transition: all 0.3s ease;
+}
+
+/* Ajustes de padding para el header */
+#header {
+  transition: all 0.3s ease;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+@media (max-width: 768px) {
+  .whatsapp-float {
+    width: 55px;
+    height: 55px;
+    font-size: 28px;
+    bottom: 20px;
+    right: 20px;
+  }
+}

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto | Studio Berenice</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Nunito:wght@300;400;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Iconos (FontAwesome) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              bg: '#fff5f8',
+              text: '#a54b4b',
+              primary: '#ff69b4',
+              hover: '#e1579f',
+              dark: '#444444',
+              white: '#ffffff',
+            },
+            social: {
+              whatsapp: '#25D366',
+              facebook: '#1877F2',
+              tiktok: '#000000'
+            }
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'serif'],
+            sans: ['"Nunito"', 'sans-serif'],
+          },
+          backgroundImage: {
+            'instagram': 'linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%)',
+          },
+          boxShadow: {
+            'card': '0 10px 30px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.01)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="font-sans antialiased flex flex-col min-h-screen pt-24 bg-white">
+
+  <div id="header-placeholder"></div>
+
+  <main class="flex-grow">
+
+    <section class="py-16 bg-gradient-to-b from-brand-bg to-white text-center">
+      <div class="container mx-auto px-6">
+        <div class="max-w-3xl mx-auto reveal active">
+          <h1 class="font-serif text-5xl font-bold text-brand-text mb-4">Contacta con Nosotros</h1>
+          <div class="w-24 h-1 bg-brand-primary mx-auto rounded-full mb-6"></div>
+          <p class="text-gray-600 text-lg">
+            Estamos disponibles a través de diferentes redes sociales. ¡No dudes en escribirnos, estamos para servirte!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="pb-20 container mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+
+        <div
+          class="card-whatsapp bg-white p-8 rounded-[2rem] shadow-card text-center border border-gray-100 transition-all duration-300 cursor-default reveal">
+          <div class="text-5xl text-[#25D366] mb-6 transition-colors">
+            <i class="fab fa-whatsapp"></i>
+          </div>
+          <h3 class="font-serif text-2xl font-bold text-gray-800 mb-3 transition-colors">WhatsApp</h3>
+          <p class="text-gray-500 text-sm mb-8 transition-colors">
+            Chatea directamente con nuestro equipo de atención al cliente.
+          </p>
+          <a href="https://wa.me/+522941182897" target="_blank"
+            class="btn-contact inline-block px-6 py-2 border-2 border-[#25D366] text-[#25D366] rounded-full font-bold hover:shadow-lg">
+            Enviar mensaje
+          </a>
+        </div>
+
+        <div
+          class="card-facebook bg-white p-8 rounded-[2rem] shadow-card text-center border border-gray-100 transition-all duration-300 cursor-default reveal"
+          style="transition-delay: 100ms;">
+          <div class="text-5xl text-[#1877F2] mb-6 transition-colors">
+            <i class="fab fa-facebook-f"></i>
+          </div>
+          <h3 class="font-serif text-2xl font-bold text-gray-800 mb-3 transition-colors">Facebook</h3>
+          <p class="text-gray-500 text-sm mb-8 transition-colors">
+            Síguenos para conocer promociones y novedades de nuestro negocio.
+          </p>
+          <a href="https://www.facebook.com/unasbereniice/" target="_blank"
+            class="btn-contact inline-block px-6 py-2 border-2 border-[#1877F2] text-[#1877F2] rounded-full font-bold hover:shadow-lg">
+            Visitar página
+          </a>
+        </div>
+
+        <div
+          class="card-instagram bg-white p-8 rounded-[2rem] shadow-card text-center border border-gray-100 transition-all duration-300 cursor-default reveal"
+          style="transition-delay: 200ms;">
+          <div class="text-5xl text-pink-600 mb-6 transition-colors">
+            <i class="fab fa-instagram"></i>
+          </div>
+          <h3 class="font-serif text-2xl font-bold text-gray-800 mb-3 transition-colors">Instagram</h3>
+          <p class="text-gray-500 text-sm mb-8 transition-colors">
+            Mira nuestro contenido visual y mantente actualizado con nuestras historias.
+          </p>
+          <a href="https://www.instagram.com/unasbereniice/" target="_blank"
+            class="btn-contact inline-block px-6 py-2 border-2 border-pink-500 text-pink-500 rounded-full font-bold hover:shadow-lg">
+            Seguir cuenta
+          </a>
+        </div>
+
+        <div
+          class="card-tiktok bg-white p-8 rounded-[2rem] shadow-card text-center border border-gray-100 transition-all duration-300 cursor-default reveal"
+          style="transition-delay: 300ms;">
+          <div class="text-5xl text-black mb-6 transition-colors">
+            <i class="fab fa-tiktok"></i>
+          </div>
+          <h3 class="font-serif text-2xl font-bold text-gray-800 mb-3 transition-colors">TikTok</h3>
+          <p class="text-gray-500 text-sm mb-8 transition-colors">
+            Disfruta de nuestros videos divertidos y tutoriales interesantes.
+          </p>
+          <a href="https://www.tiktok.com/@bereniicerv" target="_blank"
+            class="btn-contact inline-block px-6 py-2 border-2 border-black text-black rounded-full font-bold hover:shadow-lg">
+            Ver contenido
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="py-16 bg-brand-bg/30">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="font-serif text-4xl font-bold text-brand-text mb-10 reveal">Nuestra Ubicación</h2>
+
+        <div class="w-full h-96 rounded-3xl overflow-hidden shadow-xl border-4 border-white reveal">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.661605658661!2d-99.1678126850934!3d19.42702498688849!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff35f5bd1563%3A0x6c366f0e2de02ff7!2sEl%20%C3%81ngel%20de%20la%20Independencia!5e0!3m2!1ses-419!2smx!4v1625686000000!5m2!1ses-419!2smx"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+
+        <div class="mt-8 text-gray-600 reveal">
+          <p class="font-bold text-lg"><i class="fas fa-map-marker-alt text-brand-primary mr-2"></i>Calle Principal
+            #123, Colonia Centro.</p>
+          <p>Tu Ciudad, CP 00000</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="footer-placeholder"></div>
+  <div id="whatsapp-placeholder"></div>
+
+  <script src="js/components.js"></script>
+  <script src="js/main.js"></script>
+
+  <script>
+    renderComponents('contacto');
+  </script>
+</body>
+
+</html>
